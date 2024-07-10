@@ -4,8 +4,8 @@ function checkAnswer() {
     const feedback = document.querySelector('#feedback');
     
     btn.addEventListener('click', function() {
-        const userAnswer = document.querySelector('input[name="quiz"]:checked');
-        if (userAnswer && userAnswer.value === correctAnswer) {
+        const userAnswer = document.querySelector('input[name="quiz"]:checked').value;
+        if (userAnswer === correctAnswer) {
             feedback.textContent = 'Correct! Well done.';
         } else {
             feedback.textContent = "That's incorrect. Try again!";
