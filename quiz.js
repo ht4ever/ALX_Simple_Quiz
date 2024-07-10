@@ -1,6 +1,6 @@
 function checkAnswer() {
     const correctAnswer = "4"; // Value should be a string as radio input values are strings
-    const btn = document.querySelector('#submit-answer');
+    const btn = document.getElementById('submit-answer');
     const feedback = document.querySelector('#feedback');
     
     btn.addEventListener('click', function() {
